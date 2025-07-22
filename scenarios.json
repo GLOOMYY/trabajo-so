@@ -1,0 +1,63 @@
+{
+  "S1": {
+    "processes": [
+      {"pid": "P1", "requests": ["R1", "R2"]},
+      {"pid": "P2", "requests": ["R2", "R1"]}
+    ],
+    "resource_order": {"R1": 1, "R2": 2}
+  },
+  "S2": {
+    "processes": [
+      {"pid": "A", "requests": ["X", "Y", "Z"]},
+      {"pid": "B", "requests": ["Y", "Z", "X"]},
+      {"pid": "C", "requests": ["Z", "X", "Y"]}
+    ],
+    "resource_order": {"X": 1, "Y": 2, "Z": 3}
+  },
+  "S3": {
+    "processes": [
+      {"pid": "P1", "requests": ["R1", "R2", "R3"]},
+      {"pid": "P2", "requests": ["R1", "R2", "R3"]},
+      {"pid": "P3", "requests": ["R1", "R2", "R3"]}
+    ],
+    "resource_order": {"R1": 1, "R2": 2, "R3": 3}
+  },
+  "S4": {
+    "processes": [
+      {"pid": "P1", "requests": ["R1", "R2"]},
+      {"pid": "P2", "requests": ["R2", "R3"]},
+      {"pid": "P3", "requests": ["R3", "R4"]},
+      {"pid": "P4", "requests": ["R4", "R1"]}
+    ],
+    "resource_order": {"R1": 1, "R2": 2, "R3": 3, "R4": 4}
+  },
+  "S5": {
+    "processes": [
+      {"pid": "P1", "requests": ["R1", "R3"]},
+      {"pid": "P2", "requests": ["R3", "R5"]},
+      {"pid": "P3", "requests": ["R5", "R1"]}
+    ],
+    "resource_order": {"R1": 1, "R3": 2, "R5": 3}
+  },
+  "S6": {
+    "processes": [
+      {"pid": "P1", "requests": ["R1", "R2", "R3"]},
+      {"pid": "P2", "requests": ["R1", "R3"]},
+      {"pid": "P3", "requests": ["R2", "R3"]}
+    ],
+    "resource_order": {"R1": 1, "R2": 2, "R3": 3}
+  },
+  "S7": {
+    "processes": [
+      {"pid": "P1", "requests": ["R1", "R2"]},
+      {"pid": "P2", "requests": ["R3", "R4"]}
+    ],
+    "resource_order": {"R1": 1, "R2": 2, "R3": 3, "R4": 4}
+  },
+  "S8": {
+    "processes": [
+      {"pid": "P1", "requests": ["R1", "R2", "R3"]}
+    ],
+    "resource_order": {"R1": 1, "R2": 2, "R3": 3}
+  }
+}

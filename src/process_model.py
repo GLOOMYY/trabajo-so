@@ -17,8 +17,7 @@ class Process:
     """
     def __init__(self, pid: str, requests: List[str]):
         self.pid = pid
-        # Lista de IDs de recursos en el orden que los solicita
-        self.requests = requests
+        self.requests = requests  # Lista de IDs de recursos
 
     def __repr__(self):
         return f"Process(pid={self.pid}, requests={self.requests})"
